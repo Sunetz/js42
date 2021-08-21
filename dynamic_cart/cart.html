@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./cart.js" defer></script>
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=='' crossorigin='anonymous' referrerpolicy='no-referrer' />
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            display: flex;
+            width: 800px;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding-top: 50px;
+            text-align: center;
+        }
+        .left{
+            width: 46%;
+            height: 400px;
+            border-right: 1px solid black;
+            
+        }
+        .right{
+            width: 46%;
+            
+
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -10px;
+
+        }
+        .item{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            flex-basis: calc(100%/2 - 20px);
+        }
+        button{
+            margin-top: 20px;
+        }
+        th{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <h2>My shop</h2>
+            
+        </div>
+        <div class="right">
+            <h2>My cart</h2>
+            <table>
+                <thead>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>count</th>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td><i class='fas fa-trash'></i> pencil</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>
